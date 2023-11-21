@@ -1,0 +1,88 @@
+/*básicos*/
+:root {
+  --color-primary: #ff4c5a;
+  --color-secondary: #49a0d5;
+  --color-bg: #f5f5f5;
+  --color-text: #242424;
+  --font-family: verdana, "Source Sans Pro", sans-serif;
+  --line-height: 1.5;
+  --border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #ff4c5a;
+    --color-secondary: #49a0d5;
+    --color-bg: #242424;
+    --color-text: #f5f5f5;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+}
+
+#winPopup {
+  background: var(--color-bg);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+}
+
+.sec {
+  background: var(--color-bg);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 20px;
+}
+
+a {
+  padding: 20px;
+  color: var(--color-primary);
+}
+
+pre {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+form {
+  background: #fff;
+  border: 1px solid var(--color-secondary);
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+}
+
+button {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+
+/* de los componentes */
+.my-component {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
