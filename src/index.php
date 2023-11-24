@@ -10,6 +10,8 @@ require 'app/router.php';
     <script src="./app/vuetify.js"></script>
     <link href="./app/css/sdt.css" rel="stylesheet">
     <link href="./app/css/vuetify342.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 
 <body>

@@ -1,6 +1,7 @@
 // Importaciones de componentes
 import PruebaComponent from "./components/PruebaComponent.js";
-import SideNavComponent from "./components/SideNavComponent.js"; //
+import SideNavComponent from "./components/SideNavComponent.js"; 
+import SideTablaComponent from "./components/TablaComponent.js";//
 
 // Inicializa las funciones createApp y createVuetify de Vue
 const { createApp, ref } = Vue;
@@ -26,6 +27,10 @@ const vuetify = createVuetify({
       },
     },
   },
+  locale:{
+    locale: 'es',
+    fallback: 'es'
+  }
 });
 
 // Crea una aplicación Vue
@@ -48,6 +53,7 @@ const app = createApp({
 // Registra los componentes
 app.component("my-component", PruebaComponent);
 app.component("sdt-nav", SideNavComponent);
+app.component("sdt-tabla", SideTablaComponent);
 
 // Utiliza el plugin Vuetify
 // Monta la aplicación en el elemento con el ID 'app'

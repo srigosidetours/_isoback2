@@ -1915,6 +1915,107 @@
         empty: 'No more'
       }
     };
+
+    var es = {
+      badge: 'Insignia',  
+      open: 'Abrir',
+      close: 'Cerrar', 
+      confirmEdit: {
+        ok: 'Aceptar',
+        cancel: 'Cancelar'
+      },
+      dataIterator: {
+        noResultsText: 'No se encontraron registros coincidentes',
+        loadingText: 'Cargando elementos...'
+      },
+      dataTable: {
+        itemsPerPageText: 'Filas por página:',
+        ariaLabel: {
+          sortDescending: 'Ordenado descendente.',
+          sortAscending: 'Ordenado ascendente.',
+          sortNone: 'No ordenado.',
+          activateNone: 'Activar para quitar el ordenamiento.',
+          activateDescending: 'Activar para ordenar descendentemente.', 
+          activateAscending: 'Activar para ordenar ascendentemente.'
+        },
+        sortBy: 'Ordenar por' 
+      },
+      dataFooter: {
+        itemsPerPageText: 'Elementos por página:',
+        itemsPerPageAll: 'Todos',
+        nextPage: 'Siguiente página', 
+        prevPage: 'Página anterior',
+        firstPage: 'Primera página',
+        lastPage: 'Última página',
+        pageText: '{0}-{1} de {2}'
+      },
+      dateRangeInput: {
+        divider: 'a'
+      },
+      datePicker: {
+        itemsSelected: '{0} seleccionado',
+        range: {
+          title: 'Seleccionar fechas',
+          header: 'Ingresar fechas'
+        },
+        title: 'Seleccionar fecha',
+        header: 'Ingresar fecha',
+        input: {
+          placeholder: 'Ingrese fecha'
+        }
+      },
+      noDataText: 'No hay datos disponibles',
+      carousel: {
+        prev: 'Visual anterior',
+        next: 'Próximo visual',
+        ariaLabel: {
+          delimiter: 'Diapositiva {0} de {1}' 
+        }
+      },
+      calendar: {
+        moreEvents: '{0} más'
+      }, 
+      input: {
+        clear: 'Limpiar {0}',
+        prependAction: '{0} acción predeterminada',
+        appendAction: '{0} acción agregada',
+        otp: 'Ingrese el carácter OTP {0}'
+      },
+      fileInput: {
+        counter: '{0} archivos',
+        counterSize: '{0} archivos ({1} en total)'
+      },
+      timePicker: { 
+        am: 'AM',
+        pm: 'PM'
+      },
+      pagination: {
+        ariaLabel: {
+          root: 'Navegación de Paginación',
+          next: 'Página siguiente', 
+          previous: 'Página anterior',
+          page: 'Ir a página {0}',
+          currentPage: 'Página {0}, página actual',
+          first: 'Primera página',
+          last: 'Última página'
+        }
+      },
+      stepper: {
+        next: 'Siguiente',
+        prev: 'Anterior'  
+      },
+      rating: {
+        ariaLabel: {
+          item: 'Calificación {0} de {1}'
+        }
+      },
+      loading: 'Cargando...',
+      infiniteScroll: {
+        loadMore: 'Cargar más',
+        empty: 'No hay más'
+      }
+    };
+
   
     const defaultRtl = {
       af: false,
@@ -2113,6 +2214,7 @@
       const fallback = vue.shallowRef(options?.fallback ?? 'en');
       const messages = vue.ref({
         en,
+        es,
         ...options?.messages
       });
       return {

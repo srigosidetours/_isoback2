@@ -1,2 +1,2 @@
 <!-- indice.php -->
-Index
+<sdt-tabla></sdt-tabla>

@@ -15,7 +15,7 @@ export default {
   template: `
     <div class="my-component sec" style="margin:20px">
       <p>Count is {{ count }}</p>
-      <button style="background-color:grey;" @click="incrementCount">Increment</button>
+      <v-btn style="background-color:grey;" @click="incrementCount">Increment</v-btn>
     </div> 
   `
 }
