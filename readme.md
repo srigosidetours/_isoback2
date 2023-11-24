@@ -2,21 +2,35 @@
 
 ![portada](image2.png)
 
+> Recuerda que para arrancar este **proyecto** tienes que copiar los archivos del repositorio y con Docker usar el comando `docker-compose up`
+
+>  También puedes arrastrar a un __v-host__ en tu local con php.
+
 
 ```NONE
 - index.php
 
-- app/
+- 📂 app/
 
-  - Componentes/
+  - router.php
+
+  - app.js
+
+  - vue323.js
+
+  - vuetify.js
+
+  - 📁 Componentes/
 
     - HolaMundoComponent.js
 
     - PruebaComponent.js
 
     - SideNavComponent.js
+    
+    - ...
 
-  - Paginas/
+  - 📁 Paginas/
 
     - Inicio.php
 
@@ -24,25 +38,23 @@
 
     - Contacto.php
 
-  - Servicios/
+    - ...
+
+  - 📁 Servicios/
 
     - escrituraService.php
 
-      -lecturaService.php
+    - lecturaService.php
 
-  - CSS/
+    - ...
+
+  - 📁 CSS/
 
     - sdt.css
 
     - vuetify.css
 
-- router.php
 
-- app.js
-
-- vue323.js
-
-- vuetify.js
 ```
 
 ![portada](image1.png)
@@ -112,6 +124,8 @@ Los componentes que se crean en la carpeta "componentes" pueden ser reusables en
 
 Para usar un componente basta con agregar su tag correspondiente en el HTML.
 
+Los componentes pueden usar los propios del Vuetify como `<b-btn>`
+
 ```PHP
 <!--AcercaDe.php-->
 
@@ -172,3 +186,7 @@ De esta forma:
 * Siempre se carga una página por defecto
 
 Esto permite navegar entre las distintas vistas de forma amigable para el usuario y centralizada desde este archivo de router. Es una implementación simple pero funcional del enrutamiento en PHP.
+
+# 🤺 TO DO
+
+[ ] Usar localStorage para almacenar algunos datos.  
